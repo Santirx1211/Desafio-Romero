@@ -1,4 +1,5 @@
 debugger
+
 //Primer algoritmo con for
 var numero1 = parseInt(prompt("ingrese el numero que sera multiplicado"));
 
@@ -9,10 +10,13 @@ for(var i = 1; i< 10; i++ ){
 
 
 //while
-var contador = 0;
 
-while(palabra != "coderhouse"){
-    var palabra = prompt("Ingrese la palabra clave");
-    contador++;
-    var pista = alert("intente con coderhouse");
-}alert("has ingresado la palabra correcta")
+let texto = prompt("ingrese un nombre");
+
+while(texto != "coderhouse"){
+    if(texto != false){
+        alert("intenta con coderhouse")
+    }
+    texto = prompt("intenta de nuevo");
+
+}alert("has ingresado la palabra correcta");
