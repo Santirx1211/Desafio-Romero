@@ -1,22 +1,25 @@
 debugger
 
-//Primer algoritmo con for
-var numero1 = parseInt(prompt("ingrese el numero que sera multiplicado"));
 
-for(var i = 1; i< 10; i++ ){
-    var multi = numero1 * i;
-    alert("su valor es:" +multi);
+function verProducto(){
+    let ver = alert("Bienvenido a Dungeon store");
+    let nombreProducto = prompt("Seleccione los productos de la pagina");
+    console.log(producto(nombreProducto));
 }
 
 
-//while
-
-let texto = prompt("ingrese un nombre");
-
-while(texto != "coderhouse"){
-    if(texto != false){
-        alert("intenta con coderhouse")
+function producto(item){
+    switch(item) {
+        case "Dados de Rol":
+            return "Los dados de rol vienen en rojo, verde y amarillos y valen $700";
+        case "Tazas":
+            return "Tenemos las tazas de Star Wars, Dragon Ball, etc y valen $1500";
+        case "Mangas":
+            return "Tenemos todos los mangas y su valor es de $700";
+        case "Cartas":
+                return "Tenemos sobres de yugioh, magic, pokemon y su valor es de $360";
+        default:
+            return "No eligió producto"
     }
-    texto = prompt("intenta de nuevo");
+}
 
-}alert("has ingresado la palabra correcta");
