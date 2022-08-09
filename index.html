@@ -5,18 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/productos.js"></script>
+    <!--Css-->
     <link rel="stylesheet" href="css/style.css">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bahiana&family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+<!--Iconos-->
+<script src="https://kit.fontawesome.com/26d8a8b5df.js" crossorigin="anonymous"></script>
     <title>Dungeon Store</title>
 </head>
 <body>
-    <h1>Para iniciar coloque en la consola </h1>
-    <h2>agregarProductos()</h2>
-    <p> Y con eso podrás agregar productos de la siguiente lista:</p>
-    <ul>
-        <li>Dados de Rol: Rojos, amarillos, verdes y morados = valor: $700</li>
-        <li>Tazas: Star Wars, Dragon ball, The boys = valor: $500</li>
-        <li>Mangas: Dragon ball, Naruto, Bleach, Death note = valor: $700</li>
-        <li>Cartas: Yugioh y Magic = valor: $350</li>
-</ul>
+<nav class="nav"> 
+    <div class="nav-center container">
+        <div class="nav-logo">
+            <h1>Dungeon <span>Store</span></h1>
+        </div>
+        <ul class="carrito-icon">
+            <span>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="item-total">0</span>
+            </span>
+        </ul>
+    </div>
+</nav>
 </body>
+
+<section class="productos">
+<div class="productos-center">
+    <div class="producto">
+        <div class="image-container">
+            <img src="/img/Dados-rojos.png" alt="">
+        </div>
+        <div class="producto-texto">
+            <h1>Dados de Rol Rojos</h1>
+            <div class="price">$700</div>
+            <div class="bottom">
+                <div class="btn-group">
+                    <a href="#" class="btn addToCart">Añadir carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="producto">
+        <div class="image-container">
+            <img src="/img/Dados-amarillos.png" alt="">
+        </div>
+        <div class="producto-texto">
+            <h1>Dados de Rol Amarillos</h1>
+            <div class="price">$700</div>
+            <div class="bottom">
+                <div class="btn-group">
+                    <a href="#" class="btn addToCart">Añadir carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="producto">
+        <div class="image-container">
+            <img src="/img/Taza-Star-Wars.png" alt="">
+        </div>
+        <div class="producto-texto">
+            <h1>Taza Star Wars</h1>
+            <div class="price">$530</div>
+            <div class="bottom">
+                <div class="btn-group">
+                    <a href="#" class="btn addToCart">Añadir carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="producto">
+        <div class="image-container">
+            <img src="/img/Manga-Dbs.png" alt="">
+        </div>
+        <div class="producto-texto">
+            <h1>Manga Dragon Ball</h1>
+            <div class="price">$750</div>
+            <div class="bottom">
+                <div class="btn-group">
+                    <a href="#" class="btn addToCart">Añadir carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="producto">
+        <div class="image-container">
+            <img src="/img/Sobre-Yugioh.png" alt="">
+        </div>
+        <div class="producto-texto">
+            <h1>Sobre Yugioh</h1>
+            <div class="price">$350</div>
+            <div class="bottom">
+                <div class="btn-group">
+                    <a href="#" class="btn addToCart">Añadir carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="producto">
+        <div class="image-container">
+            <img src="/img/Sobre-Magic.png" alt="">
+        </div>
+        <div class="producto-texto">
+            <h1>Sobre Magic</h1>
+            <div class="price">$350</div>
+            <div class="bottom">
+                <div class="btn-group">
+                    <a href="#" class="btn addToCart">Añadir carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="producto">
+        <div class="image-container">
+            <img src="/img/Taza-Death-Note.png" alt="">
+        </div>
+        <div class="producto-texto">
+            <h1>Taza Death Note</h1>
+            <div class="price">$530</div>
+            <div class="bottom">
+                <div class="btn-group">
+                    <a href="#" class="btn addToCart">Añadir carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 </html>
