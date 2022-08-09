@@ -45,6 +45,9 @@ a{
     padding: 0 1.6rem;
 }
 
+.comando{
+    color: var(--white);
+}
 
 
 .nav{

@@ -26,11 +26,7 @@ function buscarProducto(){
     let busqueda = prompt("Que producto quiere agregar").toUpperCase()
     let buscar = productos.find(el => el.nombre.includes(busqueda))
     carrito.push(buscar)
-}
-
-
-
-let seguir = confirm("Si quiere agregar mas productos seleccione aceptar/si quieres saber el total dale a cancelar");
+    let seguir = confirm("Si quiere agregar mas productos seleccione aceptar/si quieres saber el total dale a cancelar");
 if (seguir){
     buscarProducto()
     let total = carrito.reduce((acc, el) => acc + el.importe, 0 )
@@ -39,4 +35,7 @@ console.log("El total de los productos a pagar es: $", total)
     let total = carrito.reduce((acc, el) => acc + el.importe, 0 )
 console.log("El total del producto a pagar es: $", total)
 }
+}
+
+
 
