@@ -29,7 +29,7 @@ function buscarProducto(){
 }
 
 
-buscarProducto()
+
 let seguir = confirm("Si quiere agregar mas productos seleccione aceptar/si quieres saber el total dale a cancelar");
 if (seguir){
     buscarProducto()
