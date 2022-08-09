@@ -22,6 +22,7 @@ function listadoProductos() {
 listadoProductos()
 console.table(productos)
 const carrito = []
+
 function buscarProducto(){
     let busqueda = prompt("Que producto quiere agregar").toUpperCase()
     let buscar = productos.find(el => el.nombre.includes(busqueda))
@@ -36,6 +37,3 @@ console.log("El total de los productos a pagar es: $", total)
 console.log("El total del producto a pagar es: $", total)
 }
 }
-
-
-
