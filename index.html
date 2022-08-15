@@ -11,130 +11,41 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bahiana&family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
 <!--Iconos-->
-<script src="https://kit.fontawesome.com/26d8a8b5df.js" crossorigin="anonymous"></script>
+
     <title>Dungeon Store</title>
 </head>
-<body>
-<nav class="nav"> 
-    <div class="nav-center container">
+<header class="nav"> 
+    <div class="nav-center">
         <div class="nav-logo">
             <h1>Dungeon <span>Store</span></h1>
         </div>
-        <ul class="carrito-icon">
-            <span>
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span class="item-total">0</span>
-            </span>
-        </ul>
-        <div class="comando"><h1>Poner buscarProducto() para iniciar</h1></div>
     </div>
-</nav>
+</header>
 
-<section class="productos">
-    <div class="productos-center">
-        <div class="producto">
-            <div class="image-container">
-                <img src="img/Dados-rojos.png" alt="">
-            </div>
-            <div class="producto-texto">
-                <h1>Dados de Rol Rojos</h1>
-                <div class="price">$700</div>
-                <div class="bottom">
-                    <div class="btn-group">
-                        <a href="#" class="btn addToCart">Añadir carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="producto">
-            <div class="image-container">
-                <img src="img/Dados-amarillos.png" alt="">
-            </div>
-            <div class="producto-texto">
-                <h1>Dados de Rol Amarillos</h1>
-                <div class="price">$700</div>
-                <div class="bottom">
-                    <div class="btn-group">
-                        <a href="#" class="btn addToCart">Añadir carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="producto">
-            <div class="image-container">
-                <img src="img/Taza-Star-Wars.png" alt="">
-            </div>
-            <div class="producto-texto">
-                <h1>Taza Star Wars</h1>
-                <div class="price">$530</div>
-                <div class="bottom">
-                    <div class="btn-group">
-                        <a href="#" class="btn addToCart">Añadir carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="producto">
-            <div class="image-container">
-                <img src="img/Manga-Dbs.png" alt="">
-            </div>
-            <div class="producto-texto">
-                <h1>Manga Dragon Ball</h1>
-                <div class="price">$750</div>
-                <div class="bottom">
-                    <div class="btn-group">
-                        <a href="#" class="btn addToCart">Añadir carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="producto">
-            <div class="image-container">
-                <img src="img/Sobre-Yugioh.png" alt="">
-            </div>
-            <div class="producto-texto">
-                <h1>Sobre Yugioh</h1>
-                <div class="price">$350</div>
-                <div class="bottom">
-                    <div class="btn-group">
-                        <a href="#" class="btn addToCart">Añadir carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="producto">
-            <div class="image-container">
-                <img src="img/Sobre-Magic.png" alt="">
-            </div>
-            <div class="producto-texto">
-                <h1>Sobre Magic</h1>
-                <div class="price">$350</div>
-                <div class="bottom">
-                    <div class="btn-group">
-                        <a href="#" class="btn addToCart">Añadir carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="producto">
-            <div class="image-container">
-                <img src="img/Taza-Death-Note.png" alt="">
-            </div>
-            <div class="producto-texto">
-                <h1>Taza Death Note</h1>
-                <div class="price">$530</div>
-                <div class="bottom">
-                    <div class="btn-group">
-                        <a href="#" class="btn addToCart">Añadir carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
+<section class="container">
+
+</section>
 
 
-<script src="js/productos.js"></script>
+<section class="carrito">
+    <h2 class="carrito-title">Carrito</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Imagen</th>
+                <th>Descripcion</th>
+                <th>valor</th>
+                <th>accion</th>
+            </tr>
+        </thead>
+        <tbody class="tabla">
+
+        </tbody>
+    </table>
+</section>
+
+<script src="js/tienda.js"></script>
 </body>
 
 
