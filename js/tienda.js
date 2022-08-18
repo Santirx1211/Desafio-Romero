@@ -52,7 +52,6 @@ function comprar(){
         el.addEventListener("click", (ev)=>{
             let button = ev.target
             let id = button.id
-            console.log(id);
             agregarAlCarrito(id)
         })
     })
@@ -101,4 +100,9 @@ function eliminarProductoDom(){
 
 function eliminarProductoCart(id){
     carrito = carrito.filter(el=> el.id !== parseInt(id));
+}
+
+//total
+function ValorTotal(){
+    
 }
