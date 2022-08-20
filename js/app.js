@@ -7,11 +7,8 @@ cargarEventListeners();
 
 function cargarEventListeners(){
     productos.addEventListener('click', comprarProducto);
-
     carrito.addEventListener('click', eliminarProducto);
-
     vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
-
     document.addEventListener('DOMContentLoaded', leerLocalStorage);
 }
 
@@ -58,7 +55,7 @@ function eliminarProducto(e) {
         productoId;
 
     if(e.target.classList.contains('borrar-producto')) {
-        e.target.parentElement,parentElement.remove();
+        e.target.parentElement.parentElement.remove();
         producto = e.target.parentElement.parentElement;
         productoId = producto.querySelector('a').getAttribute('data-id');
     }
