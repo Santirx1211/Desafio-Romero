@@ -60,8 +60,11 @@ ul{
     color: white;
 }
 
-#lista-productos .row {
-    margin-bottom: 20px;
+
+#lista-productos .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .agregar-carrito{
     margin: 10px 0;
@@ -70,6 +73,10 @@ ul{
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.05);
     background: #1d2124;
+    margin: 5px 0;
+}
+.card img{
+    width: 300px;
 }
 
 .info-card{
