@@ -130,3 +130,8 @@ function eliminarProductoLocalStorage(producto){
 function vaciarLocalStorage(){
     localStorage.clear();
 }
+
+
+function sumartotal(){
+    
+}
