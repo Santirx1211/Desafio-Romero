@@ -1,4 +1,4 @@
-
+// Constructor de Producto
 class Producto{
     constructor(id, nombre, valor, stock, img){
         this.id = id;
@@ -14,6 +14,8 @@ let carrito = JSON.parse(localStorage.getItem("carritoLocal")) || [];
 let numeroCarrito = document.querySelector(".numero")
 let totalCarrito = document.querySelector(".total")
 
+
+//funcion de listado de productos
 function listadoProductos() {
     productos.push(new Producto(1,"DADOS DE ROL ROJOS",700,5,'img/Dados-rojos.png' ));
     productos.push(new Producto(2,"DADOS DE ROL AMARILLOS",700,2,'img/Dados-amarillos.png'));
@@ -26,7 +28,7 @@ function listadoProductos() {
 
 
 
-
+// agregar cards al Dom
 
 function renderizarProductosAlDom() {
     let container = document.querySelector(".products");
@@ -43,7 +45,7 @@ function renderizarProductosAlDom() {
     comprar()
 }
 
-
+//funcion boton comprar
 function comprar(){
     productos.forEach((prod) => {
         document.querySelector(`#btn-agregar${prod.id}`).addEventListener("click", () =>{
@@ -56,7 +58,7 @@ comprar()
 
 
 
-
+//agregar productos al array carrito
 function agregarAlCarrito(IdParametro){
     const buscar = productos.find(el => el.id == IdParametro)
     carrito.push(buscar)
@@ -65,6 +67,8 @@ function agregarAlCarrito(IdParametro){
     renderizarCarrito()
 }
 
+
+//function renderizar carrito
 function renderizarCarrito() {
     let tabla = document.querySelector(".tabla")
     tabla.innerHTML = ""
@@ -82,7 +86,7 @@ function renderizarCarrito() {
     borrarProducto()
     calcularTotal()
 }
-
+//funcion boton eliminar producto del array carrito
 function borrarProducto() {
     let eliminarBtn = document.querySelectorAll(".eliminar-btn");
     eliminarBtn.forEach(el => {
@@ -104,7 +108,7 @@ function eliminar(param) {
 }
 
 
-
+//funcion sacar total
 function calcularTotal() {
     let total = carrito.reduce((acc, prod) => acc + prod.valor, 0)
     totalCarrito.innerHTML = total
