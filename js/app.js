@@ -1,3 +1,4 @@
+
 class Producto{
     constructor(id, nombre, valor, stock, img){
         this.id = id;
