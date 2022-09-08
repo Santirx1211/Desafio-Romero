@@ -1,0 +1,48 @@
+{
+    "status": "success",
+    "items": [{
+            "id": 1,
+            "title": "Dados de Rol Rojos",
+            "price": 700,
+            "image": "https://http2.mlstatic.com/D_NQ_NP_737007-MLA47559576467_092021-O.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Dados de Rol Amarillos",
+            "price": 700,
+            "image": "https://http2.mlstatic.com/D_NQ_NP_705274-MLA40800039760_022020-O.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Taza Star Wars",
+            "price": 530,
+            "image": "http://d3ugyf2ht6aenh.cloudfront.net/stores/001/030/513/products/16521142790861-34abfb17554afc5aaf16521144953167-640-0.png"
+        },
+        {
+            "id": 4,
+            "title": "Manga Dragon Ball",
+            "price": 530,
+            "image": "https://i.pinimg.com/originals/b5/b0/37/b5b037a6fd1acb63cfd9bab92054e55f.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Taza Death Note",
+            "price": 530,
+            "image": "https://http2.mlstatic.com/D_NQ_NP_814517-MLA46872821828_072021-O.jpg"
+
+        },
+        {
+            "id": 6,
+            "title": "Cartas Yugioh",
+            "price": 350,
+            "image": "https://www.yugioh-card.com/products_publish/eu/led7/eu/es/images/foil_mocks_led7_sp.png"
+
+        },
+        {
+            "id": 7,
+            "title": "Cartas Magic",
+            "price": 350,
+            "image": "https://www.lacavernadevoltir.com/wp-content/uploads/2020/06/Colecci%C3%B3n-B%C3%A1sica-2021-3-Sobres-MTG.jpg"
+        }
+    ]
+}

@@ -2,73 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DungeonStore</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dungeon Store</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="four columns">
-                    <h1>Dungeon Store</h1>
-                </div>
-            </div>
+
+  <nav class="nav">
+    <div class="nav__center container">
+      <div class="nav__logo">
+        <h1>Dungeon <span>Store</span></h1>
+      </div>
+      <ul class="nav__list">
+        <div class="carrito__icon">
+          <i class="bx bx-cart"></i>
+          <span class="item__total">0</span>
         </div>
-    </header>
-<h1 class="title">Productos</h1>
-<div class="owl-container">
-    <div class="owl-carousel owl-theme">
-        <div class="item"><img src="img/Dados-amarillos.png" alt=""></div>
-        <div class="item"><img src="img/Dados-rojos.png" alt=""></div>
-        <div class="item"><img src="img/Manga-Dbs.png" alt=""></div>
-        <div class="item"><img src="img/Sobre-Magic.png" alt=""></div>
-        <div class="item"><img src="img/Sobre-Yugioh.png" alt=""></div>
-        <div class="item"><img src="img/Taza-Death-Note.png" alt=""></div>
-        <div class="item"><img src="img/Taza-Star-Wars.png" alt=""></div>
+      </ul>
     </div>
-</div>
-
-
-
-<div id="lista-productos" class="container">
-    <h1 class="encabezado">Tienda</h1>
-<div class="products" >
-</div>
-</div>
-
-<section class="carrito">
-    <h2 class="carrito-title">Carrito</h2>
-    <div class="contador-total">
-        <p>Total Carrito: $ <span class="total">0</span></p>
+  </nav>
+<div class="carousel">
+  <h1>Productos</h1>
+  <div class="owl-container">
+    <div class="owl-carousel owl-theme" >
+    <div class="item"><img src="img/Dados-amarillos.png" alt=""></div>
+    <div class="item"><img src="img/Dados-rojos.png" alt=""></div>
+    <div class="item"><img src="img/Manga-Dbs.png" alt=""></div>
+    <div class="item"><img src="img/Sobre-Magic.png" alt=""></div>
+    <div class="item"><img src="img/Sobre-Yugioh.png" alt=""></div>
+    <div class="item"><img src="img/Taza-Death-Note.png" alt=""></div>
+    <div class="item"><img src="img/Taza-Star-Wars.png" alt=""></div>
     </div>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Imagen</th>
-                <th>Descripcion</th>
-                <th>Valor</th>
-                <th>Accion</th>
-            </tr>
-        </thead>
-        <tbody class="tabla">
-            
-        </tbody>
-    </table>
-</section>
+  </div>
+</div>
 
 
+  <!--Productos-->
+  <section class="productos">
+    <div class="productos__center">
 
-<script src="js/app.js" ></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
+    </div>
+  </section>
+
+  <!--Carrito-->
+
+  <section class="carrito__overlay">
+    <div class="carrito">
+      <span class="close__carrito">
+        <i class="bx bx-x"></i>
+      </span>
+      <h1>Su Carrito</h1>
+
+      <div class="carrito__center">
+
+
+      </div>
+
+      <div class="carrito__footer">
+        <h3>Total: $ <span class="carrito__total">0</span></h3>
+        <button class="clear__carrito btn">remover carrito</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+  <script src="./js/scripts.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
