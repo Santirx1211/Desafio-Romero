@@ -1,4 +1,3 @@
-/* ======= COLORES ======= */
 
 :root{
     --black: #222;
@@ -30,7 +29,6 @@ body{
 }
 
 
-/* NAVIGATION */
 .nav{
     position: fixed;
     top: 0;
@@ -88,7 +86,7 @@ body{
     border-radius: 50%;
 }
 
-/* PRODUCTOS */
+
 
 .productos{
     padding: 5rem 0;
@@ -148,7 +146,7 @@ body{
 }
 
 
-/* Carrito */
+
 .carrito__overlay{
     position: fixed;
     top: 0;
